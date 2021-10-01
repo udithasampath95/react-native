@@ -5,8 +5,16 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View style={styles.header}>
+      <Text style={styles.boldTex}>Hello, World!</Text>
+      </View>
+      <View style={styles.body}>
+<Text style={styles.bodycontainer}>This is sample text</Text>
+<Text>This is sample text</Text>
+<Text>This is sample text</Text>
+<Text>This is sample text</Text>
+<Text>This is sample text</Text>
+      </View>
     </View>
   );
 }
@@ -18,4 +26,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  header:{
+    backgroundColor: 'pink',
+    padding : 20,
+  },
+  boldTex:{
+    fontWeight : 'bold',
+  },
+  body:{
+    backgroundColor: 'yellow',
+    padding: 20,
+  },
+  bodycontainer:{
+padding : 20,
+fontSize: 16,
+color:'red'
+  }
+
 });
